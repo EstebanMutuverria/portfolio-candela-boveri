@@ -1,0 +1,45 @@
+.experience__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.experience__card {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid rgba(179, 229, 252, 0.3);
+}
+
+.experience__card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-pink);
+}
+
+.experience__icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--accent-pink);
+}
+
+.experience__area {
+  font-size: 1.2rem;
+  color: var(--accent-pink);
+  margin-bottom: 15px;
+}
+
+.experience__description {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.experience__note {
+  margin-top: 50px;
+  text-align: center;
+  color: var(--text-light);
+  font-style: italic;
+  font-size: 0.9rem;
+}

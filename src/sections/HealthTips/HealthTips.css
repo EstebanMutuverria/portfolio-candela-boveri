@@ -1,0 +1,36 @@
+.tips__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.tip__card {
+  background: var(--bg-gradient);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.tip__card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-soft);
+}
+
+.tip__icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--accent-pink);
+}
+
+.tip__title {
+  color: var(--accent-pink);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.tip__description {
+  color: var(--text-dark);
+  font-size: 1rem;
+}
