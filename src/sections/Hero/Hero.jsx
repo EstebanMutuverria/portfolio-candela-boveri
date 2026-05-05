@@ -18,6 +18,7 @@ const Hero = () => {
           <div className="hero__btns">
             <Button href="#contact">{hero.cta}</Button>
             <Button href="#portfolio" variant="outline">Ver Casos</Button>
+            <Button href="cv_candela_boveri.pdf" variant="secondary">Descargar CV</Button>
           </div>
         </div>
         <div className="hero__image-container">
