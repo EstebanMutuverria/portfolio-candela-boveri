@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaTooth, FaBars, FaTimes } from 'react-icons/fa';
+import { FaTooth } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -39,8 +39,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
-      <div className="container navbar__container">
+    <>
+      <div 
+        className={`navbar__overlay ${menuOpen ? 'navbar__overlay--open' : ''}`} 
+        onClick={() => setMenuOpen(false)}
+      ></div>
+      <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
+        <div className="container navbar__container">
         <div className="navbar__logo">
           <FaTooth className="logo-icon" /> <span>Cande.Odonto</span>
         </div>
@@ -59,11 +64,14 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="navbar__toggle" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <FaTimes /> : <FaBars />}
+        <div className={`navbar__toggle ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </nav>
+    </>
   );
 };
 

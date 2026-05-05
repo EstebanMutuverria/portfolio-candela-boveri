@@ -73,8 +73,60 @@
 .navbar__toggle {
   display: none;
   cursor: pointer;
-  font-size: 1.5rem;
-  color: var(--accent-pink);
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 1001; /* ensure it stays clickable above links */
+}
+
+.navbar__toggle span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-pink);
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  left: 0;
+}
+
+.navbar__toggle span:nth-child(1) { top: 0; }
+.navbar__toggle span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.navbar__toggle span:nth-child(3) { bottom: 0; }
+
+.navbar__toggle.open span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.navbar__toggle.open span:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+
+.navbar__toggle.open span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+/* Overlay para mobile */
+.navbar__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.navbar__overlay--open {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 992px) {
