@@ -10,15 +10,25 @@ const Contact = () => {
 
   const whatsappMsg = encodeURIComponent("Hola Cande! Vi tu portfolio y me gustaría contactarte.");
 
+  const handleEmailClick = (e) => {
+    e.preventDefault();
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      window.location.href = `mailto:${contact.email}`;
+    } else {
+      window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}`, '_blank');
+    }
+  };
+
   return (
     <SectionWrapper id="contact" title="Contacto">
       <div className="contact__container">
         <div className="contact__info">
           <h3 className="contact__subtitle">¡Sigamos en contacto!</h3>
           <p className="contact__text">
-            Si tenés alguna consulta sobre mi formación, querés conocer más sobre mis prácticas clínicas o simplemente saludar, no dudes en escribirme por cualquiera de estos medios.
+            Si tenés alguna consulta sobre mi formación, querés conocer más sobre mis prácticas clínicas o simplemente contactarme, no dudes en escribirme por cualquiera de estos medios.
           </p>
-          
+
           <div className="contact__methods">
             <div className="contact__method">
               <div className="method__icon"><FaEnvelope /></div>
@@ -43,15 +53,15 @@ const Contact = () => {
           </div>
           <div className="contact__card-body">
             <p>Escribime por WhatsApp para una respuesta más rápida.</p>
-            <Button 
-              href={`https://wa.me/${contact.whatsapp}?text=${whatsappMsg}`} 
+            <Button
+              href={`https://wa.me/${contact.whatsapp}?text=${whatsappMsg}`}
               variant="secondary"
             >
-              <FaWhatsapp style={{marginRight: '8px'}} /> WhatsApp
+              <FaWhatsapp style={{ marginRight: '8px' }} /> WhatsApp
             </Button>
             <div className="contact__divider">o envíame un correo</div>
-            <Button href={`mailto:${contact.email}`} variant="outline">
-              <FaEnvelope style={{marginRight: '8px'}} /> Enviar Email
+            <Button onClick={handleEmailClick} variant="outline">
+              <FaEnvelope style={{ marginRight: '8px' }} /> Enviar Email
             </Button>
           </div>
         </div>

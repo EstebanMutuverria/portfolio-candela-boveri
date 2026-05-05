@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="hero__image-container">
           <div className="hero__image-bg"></div>
           <div className="hero__placeholder-image">
-            <img src="https://img.freepik.com/foto-gratis/dentista-femenino-joven-que-trabaja-clinica-dental_23-2148924376.jpg" alt="Cande" className="hero__image" />
+            <img src={hero.image} alt="Cande" className="hero__image" />
           </div>
         </div>
       </div>

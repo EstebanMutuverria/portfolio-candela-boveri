@@ -93,6 +93,7 @@
     padding: 40px;
     box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
+    border-radius: 10px;
   }
 
   .navbar__links--open {

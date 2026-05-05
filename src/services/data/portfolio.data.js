@@ -1,9 +1,25 @@
+//Hero image
+import hero_image from '../../assets/hero/hero_image.jpeg'
+
+//Limpieza periodontal
+import antes_limpieza_periodontal from '../../assets/casos_clinicos/antes_limpieza_periodontal.jpeg'
+import despues_limpieza_periodontal from '../../assets/casos_clinicos/despues_limpieza_periodontal.jpeg'
+
+//Carillas de resina
+import antes_carillas_de_resina from '../../assets/casos_clinicos/antes_carillas_de_resina.jpeg'
+import despues_carillas_de_resina from '../../assets/casos_clinicos/despues_carillas_de_resina.jpeg'
+
+//Incrustacion de resina
+import antes_incrustacion_de_resina from '../../assets/casos_clinicos/antes_incrustacion_de_resina.jpeg'
+import despues_incrustacion_de_resina from '../../assets/casos_clinicos/despues_incrustacion_de_resina.jpeg'
+
 export const PORTFOLIO_DATA = {
     hero: {
-        name: "Cande",
-        lastName: "Odontología",
+        name: "Candela",
+        lastName: "Boveri",
         phrase: "Estudiante avanzada de odontología enfocada en salud bucal integral",
         cta: "Consultar",
+        image: hero_image
     },
     aboutMe: {
         university: "Universidad Nacional del Oeste (UNO)",
@@ -20,16 +36,10 @@ export const PORTFOLIO_DATA = {
             description: "Cursando actualmente el 4to año de la carrera.",
         },
         {
-            title: "Curso de Estética Dental",
-            institution: "Círculo Odontológico",
-            period: "2023",
-            description: "Capacitación en carillas y restauraciones estéticas.",
-        },
-        {
-            title: "Seminario de Cirugía Bucal",
-            institution: "UBA - Facultad de Odontología",
-            period: "2024",
-            description: "Participación en jornadas de actualización quirúrgica.",
+            title: "Escuela secundaria",
+            institution: "Instituto privado Alfonsina Storni",
+            period: "2016 - 2021",
+            description: "Bachiller con orientación en Ciencias Naturales.",
         }
     ],
     experience: [
@@ -53,17 +63,24 @@ export const PORTFOLIO_DATA = {
     cases: [
         {
             id: 1,
-            title: "Restauración de Incisivo",
-            description: "Tratamiento de caries profunda con resina estética.",
-            beforeImg: "https://via.placeholder.com/400x300?text=Antes",
-            afterImg: "https://via.placeholder.com/400x300?text=Desp%C3%A9s",
+            title: "Limpieza Periodontal",
+            description: "Limpieza profunda y prevención de enfermedades periodontales.",
+            beforeImg: antes_limpieza_periodontal,
+            afterImg: despues_limpieza_periodontal,
         },
         {
             id: 2,
-            title: "Profilaxis Completa",
-            description: "Eliminación de sarro y pulido coronario.",
-            beforeImg: "https://via.placeholder.com/400x300?text=Antes",
-            afterImg: "https://via.placeholder.com/400x300?text=Desp%C3%A9s",
+            title: "Carillas de Resina",
+            description: "Restauraciones estéticas con resina.",
+            beforeImg: antes_carillas_de_resina,
+            afterImg: despues_carillas_de_resina,
+        },
+        {
+            id: 3,
+            title: 'Incrustacion de resina',
+            description: "Restauraciones estéticas con resina.",
+            beforeImg: antes_incrustacion_de_resina,
+            afterImg: despues_incrustacion_de_resina,
         }
     ],
     testimonials: [
@@ -99,8 +116,8 @@ export const PORTFOLIO_DATA = {
         }
     ],
     contact: {
-        whatsapp: "5491112345678",
-        email: "odontologia.cande@gmail.com",
-        location: "Merlo, Buenos Aires (Sede UNO)",
+        whatsapp: "5491127434309",
+        email: "bovericandela2711@gmail.com",
+        location: "Merlo, Buenos Aires",
     }
 };

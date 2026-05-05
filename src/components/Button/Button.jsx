@@ -5,8 +5,9 @@ const Button = ({ children, onClick, variant = 'primary', type = 'button', href 
   const className = `btn btn--${variant}`;
 
   if (href) {
+    const isExternal = !href.startsWith('#') && !href.startsWith('mailto:');
     return (
-      <a href={href} className={className} target={href.startsWith('#') ? '' : "_blank"} rel="noopener noreferrer">
+      <a href={href} className={className} target={isExternal ? "_blank" : undefined} rel={isExternal ? "noopener noreferrer" : undefined}>
         {children}
       </a>
     );

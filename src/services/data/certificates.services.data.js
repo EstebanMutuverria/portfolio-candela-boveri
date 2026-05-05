@@ -1,6 +1,7 @@
 import imagen1 from '../../assets/certificates/1er_certificado.jpeg'
 import imagen2 from '../../assets/certificates/2do_certificado.jpeg'
 import imagen3 from '../../assets/certificates/3er_certificado.jpeg'
+import imagen4 from '../../assets/certificates/4to_certificado.jpeg'
 
 export const CERTIFICATES_LIST = [
     {
@@ -20,5 +21,11 @@ export const CERTIFICATES_LIST = [
         name: 'Certificate 3',
         description: 'Description 3',
         image: imagen3,
+    },
+    {
+        id: 4,
+        name: 'Certificate 4',
+        description: 'Description 4',
+        image: imagen4,
     },
 ]
