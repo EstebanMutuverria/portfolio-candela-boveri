@@ -11,7 +11,7 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="container hero__container">
         <div className="hero__content">
-          <span className="hero__subtitle">Estudiante de Odontología - 4to Año</span>
+          <span className="hero__subtitle">Estudiante de Odontología - 5to Año</span>
           <h1 className="hero__title">
             Soy <span className="text-highlight">{hero.name} {hero.lastName}</span>
           </h1>

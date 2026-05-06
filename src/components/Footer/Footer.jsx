@@ -23,6 +23,13 @@ const Footer = () => {
         <div className="footer__bottom">
           <p>&copy; {currentYear} Candela Boveri. Todos los derechos reservados.</p>
         </div>
+        <div className='container__developed-by'>
+          <p>Desarrollado por </p>
+          <a href="https://www.linkedin.com/in/esteban-mutuverria/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+            Esteban Mutuverria
+          </a>
+        </div>
       </div>
     </footer>
   );

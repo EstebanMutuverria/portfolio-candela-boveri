@@ -25,7 +25,7 @@ export const PORTFOLIO_DATA = {
     },
     aboutMe: {
         university: "Universidad Nacional del Oeste (UNO)",
-        year: "4to Año",
+        year: "5to Año",
         motivation: "Elegí la odontología por mi deseo de transformar sonrisas y mejorar la calidad de vida de las personas a través de la salud bucal.",
         interests: ["Ortodoncia", "Estética Dental", "Cirugía"],
         values: "Compromiso, responsabilidad y un trato humano y empático con cada paciente.",
@@ -35,7 +35,7 @@ export const PORTFOLIO_DATA = {
             title: "Estudiante de Odontología",
             institution: "Universidad Nacional del Oeste",
             period: "2021 - Presente",
-            description: "Cursando actualmente el 4to año de la carrera.",
+            description: "Cursando actualmente el 5to año de la carrera.",
         },
         {
             title: "Escuela secundaria",
