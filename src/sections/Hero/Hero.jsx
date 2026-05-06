@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../../components/Button/Button';
 import './Hero.css';
 import { PORTFOLIO_DATA } from '../../services/data/portfolio.data';
+import { FaDownload } from 'react-icons/fa';
 
 const Hero = () => {
   const { hero } = PORTFOLIO_DATA;
@@ -15,10 +16,14 @@ const Hero = () => {
             Soy <span className="text-highlight">{hero.name} {hero.lastName}</span>
           </h1>
           <p className="hero__description">{hero.phrase}</p>
-          <div className="hero__btns">
-            <Button href="#contact">{hero.cta}</Button>
-            <Button href="#portfolio" variant="outline">Ver Casos</Button>
-            <Button href={hero.cv} variant="secondary">Descargar CV</Button>
+          <div className='container__btns'>
+            <div className="hero__btns">
+              <Button href="#contact">{hero.cta}</Button>
+              <Button href="#portfolio" variant="outline">Ver Casos</Button>
+            </div>
+            <a href={hero.cv} target="_blank" rel="noopener noreferrer" download>
+              <Button variant="secondary">Descargar CV <FaDownload className='download-cv-icon' /></Button>
+            </a>
           </div>
         </div>
         <div className="hero__image-container">
