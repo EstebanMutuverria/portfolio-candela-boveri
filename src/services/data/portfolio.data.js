@@ -1,5 +1,6 @@
-//Hero image
+//Hero image and cv
 import hero_image from '../../assets/hero/hero_image.jpeg'
+import cv_candela_boveri from '../../assets/cv/cv_candela_boveri.pdf'
 
 //Limpieza periodontal
 import antes_limpieza_periodontal from '../../assets/casos_clinicos/antes_limpieza_periodontal.jpeg'
@@ -19,7 +20,8 @@ export const PORTFOLIO_DATA = {
         lastName: "Boveri",
         phrase: "Estudiante avanzada de odontología enfocada en salud bucal integral",
         cta: "Consultar",
-        image: hero_image
+        image: hero_image,
+        cv: cv_candela_boveri
     },
     aboutMe: {
         university: "Universidad Nacional del Oeste (UNO)",
