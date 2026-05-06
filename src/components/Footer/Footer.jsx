@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer__content">
           <div className="footer__logo">
-            <FaTooth /> <span>Cande.Odonto</span>
+            <FaTooth /> <span>Odonto.Cande</span>
           </div>
           <p className="footer__text">
             Profesional en formación con experiencia clínica supervisada en la Universidad Nacional del Oeste.

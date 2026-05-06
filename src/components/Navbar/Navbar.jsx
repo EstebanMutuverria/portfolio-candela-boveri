@@ -40,37 +40,37 @@ const Navbar = () => {
 
   return (
     <>
-      <div 
-        className={`navbar__overlay ${menuOpen ? 'navbar__overlay--open' : ''}`} 
+      <div
+        className={`navbar__overlay ${menuOpen ? 'navbar__overlay--open' : ''}`}
         onClick={() => setMenuOpen(false)}
       ></div>
       <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
         <div className="container navbar__container">
-        <div className="navbar__logo">
-          <FaTooth className="logo-icon" /> <span>Cande.Odonto</span>
-        </div>
+          <div className="navbar__logo">
+            <FaTooth className="logo-icon" /> <span>Odonto.Cande</span>
+          </div>
 
-        <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
-          {navLinks.map((link) => (
-            <li key={link.name}>
-              <a 
-                href={link.href} 
-                className={activeSection === link.href.substring(1) ? 'active' : ''}
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+          <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <a
+                  href={link.href}
+                  className={activeSection === link.href.substring(1) ? 'active' : ''}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        <div className={`navbar__toggle ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
-          <span></span>
-          <span></span>
-          <span></span>
+          <div className={`navbar__toggle ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     </>
   );
 };
