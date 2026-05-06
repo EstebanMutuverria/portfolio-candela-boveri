@@ -1,6 +1,6 @@
 //Hero image and cv
 import hero_image from '../../assets/hero/hero_image.jpeg'
-import cv_candela_boveri from '../../assets/cv/cv_candela_boveri.pdf'
+import cv_candela_boveri from '../../assets/CV/cv_candela_boveri.pdf'
 
 //Limpieza periodontal
 import antes_limpieza_periodontal from '../../assets/casos_clinicos/antes_limpieza_periodontal.jpeg'
