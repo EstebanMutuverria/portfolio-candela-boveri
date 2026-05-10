@@ -13,7 +13,7 @@ const AboutMe = () => {
         <div className="about__content">
           <h3 className="about__welcome">Futura Profesional en Formación</h3>
           <p className="about__text">{aboutMe.motivation}</p>
-          
+
           <div className="about__info-cards">
             <div className="info-card">
               <span className="info-card__icon"><FaGraduationCap /></span>
@@ -31,14 +31,14 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className="about__specialties">
+          {/*           <div className="about__specialties">
             <h4>Áreas de Interés:</h4>
             <div className="specialty-tags">
               {aboutMe.interests.map((interest) => (
                 <span key={interest} className="tag">{interest}</span>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="about__values">

@@ -27,7 +27,7 @@ export const PORTFOLIO_DATA = {
         university: "Universidad Nacional del Oeste (UNO)",
         year: "5to Año",
         motivation: "Elegí la odontología por mi deseo de transformar sonrisas y mejorar la calidad de vida de las personas a través de la salud bucal.",
-        interests: ["Ortodoncia", "Estética Dental", "Cirugía"],
+        /* interests: ["Ortodoncia", "Estética Dental", "Cirugía"], */
         values: "Compromiso, responsabilidad y un trato humano y empático con cada paciente.",
     },
     formation: [
@@ -51,11 +51,11 @@ export const PORTFOLIO_DATA = {
         },
         {
             area: "Restauraciones",
-            description: "Tratamiento de caries y reconstrucción dental estética.",
+            description: "Tratamiento de caries y restauraciones dentales estéticas.",
         },
         {
             area: "Radiografías",
-            description: "Toma e interpretación de placas radiográficas periapicales.",
+            description: "Toma e interpretación de radiografías periapicales.",
         },
         {
             area: "Asistencia Clínica",
@@ -66,42 +66,42 @@ export const PORTFOLIO_DATA = {
         {
             id: 1,
             title: "Limpieza Periodontal",
-            description: "Limpieza profunda y prevención de enfermedades periodontales.",
+            description: "Limpieza profunda y tratamiento de enfermedades periodontales.",
             beforeImg: antes_limpieza_periodontal,
             afterImg: despues_limpieza_periodontal,
         },
         {
             id: 2,
             title: "Carillas de Resina",
-            description: "Restauraciones estéticas con resina.",
+            description: "Restauraciones estéticas directas realizadas con resina.",
             beforeImg: antes_carillas_de_resina,
             afterImg: despues_carillas_de_resina,
         },
         {
             id: 3,
             title: 'Incrustacion de resina',
-            description: "Restauraciones estéticas con resina.",
+            description: "Restauraciones estéticas indirectas realizadas con resina.",
             beforeImg: antes_incrustacion_de_resina,
             afterImg: despues_incrustacion_de_resina,
         }
     ],
     testimonials: [
         {
-            name: "María G.",
+            name: "Florencia L.",
             comment: "Excelente atención, muy cuidadosa y detallista. Me sentí muy cómoda durante el tratamiento.",
             role: "Paciente Clínica UNO",
         },
         {
-            name: "Dr. Roberto S.",
-            comment: "Cande demuestra una gran destreza clínica y una responsabilidad admirable en sus prácticas.",
-            role: "Profesor de Clínica II",
+            name: "Esteban M.",
+            comment: "Muy profesional y con excelente trato. Realizó un trabajo de alta calidad y me explicó todo detalladamente.",
+            role: "Paciente Clínica UNO",
         }
     ],
     healthTips: [
         {
             id: 1,
             title: "El cepillado correcto",
-            description: "No se trata de fuerza, sino de técnica. Cepillá suavemente en círculos y no olvides la lengua.",
+            description: "No se trata de fuerza, sino de técnica. Cepillá suavemente en círculos en todas las superficies dentales.",
             icon: "🦷",
         },
         {
